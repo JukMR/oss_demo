@@ -1,10 +1,10 @@
 # project2/module.py
 
-import repo3
+from repo3.repo3 import function3
 
 def function1() -> str:
     # Call functions or use features provided by project3
-    project3_call = repo3.function3()
+    project3_call = function3()
     print(project3_call)
     if isinstance(project3_call, str):
         return project3_call
