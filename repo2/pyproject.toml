@@ -1,13 +1,10 @@
-[tool.poetry]
+[project]
 name = "repo2"
 version = "1.0.0"
 description = "A repo2 version"
-authors = ["Julian Merida <julianmr97@gmail.com>"]
-packages = [
-    { include = "repo2" },
-]
+authors = [{name= "Julian Merida",  email="julianmr97@gmail.com"}]
 
-[tool.poetry.dependencies]
+[dependencies]
 repo3="1.0.0"
 
 [build-system]

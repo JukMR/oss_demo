@@ -2,11 +2,9 @@
 name = "repo1"
 version = "1.0.0"
 description = "A repo1 version"
-authors = ["Julian Merida <julianmr97@gmail.com>"]
+authors = [{name= "Julian Merida",  email="julianmr97@gmail.com"}]
 
-
-
-[tool.poetry.dependencies]
+[dependencies]
 repo2="1.0.0"
 
 [build-system]

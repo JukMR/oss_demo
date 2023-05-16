@@ -1,11 +1,13 @@
-[tool.poetry]
+[project]
 name = "repo3"
 version = "1.0.0"
 description = "A repo3 version"
-authors = ["Julian Merida <julianmr97@gmail.com>"]
-packages = [
-    { include = "repo3" },
-]
+authors = [{name= "Julian Merida",  email="julianmr97@gmail.com"}]
+
+# Trying to include this vulnerable dependency
+# https://www.cvedetails.com/cve/CVE-2015-2296/
+[dependencies]
+requests="2.5.3"
 
 [build-system]
 requires = ["setuptools>=61.0"]
