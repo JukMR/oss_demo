@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "repo2"
+version = "1.0.0"
+description = "A repo2 version"
+authors = ["Julian Merida <julianmr97@gmail.com>"]
+packages = [
+    { include = "repo2" },
+]
+
+[tool.poetry.dependencies]
+repo3="1.0.0"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
